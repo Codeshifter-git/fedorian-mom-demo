@@ -457,6 +457,7 @@ html[data-theme="midnight"]{--teal:#1B2A4A;--teal-dark:#111D34;--muted-teal:#5B7
 html[data-theme="forest"]{--teal:#1E4033;--teal-dark:#132B21;--muted-teal:#5F8A72;--sage:#84AC90}
 html[data-theme="plum"]{--teal:#3D2440;--teal-dark:#2A1730;--muted-teal:#8A6489;--sage:#A583A8}
 html[data-theme="ember"]{--teal:#7A3220;--teal-dark:#59220F;--muted-teal:#B0714F;--sage:#C08B62}
+html[data-theme="blush"]{--teal:#B85C68;--teal-dark:#8E434C;--muted-teal:#C98A92;--sage:#D9A7AD}
 
 /* ---------- Personalisation: dark appearance ---------- */
 html[data-appearance="dark"]{
@@ -754,6 +755,7 @@ window.addEventListener('appinstalled', function(){ window.__fedorianInstallProm
             <button class="swatch" data-action="pref-theme" data-theme="forest"><span class="dot" style="background:#1E4033"></span>Forest</button>
             <button class="swatch" data-action="pref-theme" data-theme="plum"><span class="dot" style="background:#3D2440"></span>Plum</button>
             <button class="swatch" data-action="pref-theme" data-theme="ember"><span class="dot" style="background:#7A3220"></span>Ember</button>
+            <button class="swatch" data-action="pref-theme" data-theme="blush"><span class="dot" style="background:#B85C68"></span>Blush</button>
           </div>
           <h3 style="margin-top:18px">Appearance</h3>
           <div class="seg">
@@ -2497,7 +2499,7 @@ document.addEventListener('click', function(e){
 
 /* ---------------- Preferences (separate localStorage key; the data key/model are untouched) ---------------- */
 const PREFS_KEY = 'fedorian_adhd_mom_prefs_v1';
-const PREF_THEMES = ['teal', 'midnight', 'forest', 'plum', 'ember'];
+const PREF_THEMES = ['teal', 'midnight', 'forest', 'plum', 'ember', 'blush'];
 const PREF_VIEWS = ['today', 'calendar', 'planner', 'weekly', 'inbox', 'kids', 'school', 'meals', 'health', 'home', 'notes', 'settings'];
 function loadPrefs(){
   const dflt = { name: '', theme: 'teal', appearance: 'light', weekStart: 'sun', home: 'today' };
